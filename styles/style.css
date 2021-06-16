@@ -108,3 +108,28 @@ body {
   }
 /* Navigation Bar end */
 
+/* About Me start */
+  .aboutMe {
+      display: flex;
+  }
+
+  .aboutMe > .aboutPhoto {
+      display: flex;
+      height: 200px;
+  }
+
+  .aboutMe > .aboutTitle {
+      display: flex;
+      width: ;
+  }
+
+  .aboutMe > .aboutBody {
+      display: flex;
+  }
+
+  @media (max-width:600px) {
+      
+  }
+
+
+/* About Me end */
