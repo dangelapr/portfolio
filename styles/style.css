@@ -110,40 +110,41 @@ body {
 /* Navigation Bar end */
 
 /* About Me start */
-  /* .aboutMe {
+  .aboutMe {
       display: flex;
+      width: 100%;
+      height: 500px;;
   }
 
   .aboutMe > .aboutPhoto {
-      display: flex;
-      height: 200px;
+      height: 100%;
   }
 
-  .aboutMe > .aboutTitle {
-      display: flex;
-      /* width: ; */
-  /* } */
-
-  .aboutMe > .aboutBody {
-      display: flex;
-  } */
+  .aboutMe > .aboutText {
+      flex-direction: column;
+  }
 
   /* Photo start */
 
+
   .aboutMe > .aboutPhoto {
-      /* align-items: left; */
-      display: flex;
+      align-items: left;
       flex-direction: column;
-      width: 100%;
+      width: 50%;
+  }
+
+  .aboutPhoto {
+    clip-path: circle(50% at 50% 50%);
   }
 
   .container {
-      border-radius: 50%;
-      height: 100%;
-      transform: scale(0.48);
+      flex-direction: column;
+      /* border-radius: 50%; */
+      /* height: 100%; */
+      /* transform: scale(0.48); */
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      width: 100%;
-      top: 210px;
+      width: 724.95px;
+      top: 0px;
       margin: 0;
       padding: 0px;
   }
@@ -166,11 +167,11 @@ body {
   }
 
   .container-inner {
-    /* clip-path:circle(40%); */
-    clip-path: circle(50% at 50% 50%);
+    flex-direction: column;
     position: relative;
     transform-origin: 50%;
-    top: 210px;
+    top: 0px;
+    bottom: 0;
     height: 100%;
     width: 100%;
   }
@@ -183,20 +184,22 @@ body {
     /* left: 10px; */
     pointer-events: none;
     position: absolute;
-    /* top: 210px; */
+    top: 0px;
+    left: 60px;
     width: 500px;
   }
 
   .imgMe {
     align-items: center;
+    border-radius: 50%;
     pointer-events: none;
-    position: relative;
-    transform: translateY(20px) scale(1.15);
-    transform-origin: 50% bottom;
+    position: absolute;
+    /* transform: translateY(20px) scale(1.15);
+    transform-origin: 50% bottom; */
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    top: 210px;
+    top: 0;
     height: 500px;
-    left: 20px;
+    left: 60px;
   }
 
 
